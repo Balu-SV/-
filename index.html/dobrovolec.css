@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+}
+
+.menu-item {
+    position: relative;
+    padding: 0 1em;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    padding: 0.75em 1em;
+}
+
+.submenu {
+    list-style-type: none;
+    border-top: 1px solid;
+    background-color: #fff;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    width: 303px;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.submenu>li {
+    position: relative;
+}
+
+.subsubmenu {
+    list-style-type: none;
+    border-top: 1px solid;
+    background-color: #fff;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    width: 333px;
+    top: 0;
+    left: 100%;
+    right: 0;
+}
+
+.submenu>li:hover .subsubmenu {
+    display: block;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.menu {
+    background-color: rgb(26, 202, 202);
+}
+
+.menu-list {
+    background-color: rgb(201, 27, 27);
+}
+
+.gallery-section {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 555px;
+    height: 555px;
+}
